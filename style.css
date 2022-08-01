@@ -14,12 +14,12 @@ body {
     font-family: 'Lato', sans-serif;
     font-style: normal;
     width: 100%;
-    overflow-x: hidden;
 }
 
 
 .container {
     padding: 20px 100px;
+    width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -893,7 +893,7 @@ header {
 @media only screen and (max-width: 600px) {
     .how-it-work-ellipse7 {
         transform: rotate(0deg) scale(0.87);
-        left: 78%;
+        left: 73%;
         width: 100px;
     }
 }
@@ -929,7 +929,7 @@ header {
     }
 }
 
-/*How uit work paragraph*/
+/*How it work paragraph*/
 .d1 p {
     font-size: 20px;
     line-height: 48px;
