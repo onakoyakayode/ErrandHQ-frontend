@@ -2214,8 +2214,18 @@ Non-essential - Styles
 
 @media only screen and (max-width: 600px) {
     .main-footer {
-        flex-wrap: wrap;
-        padding: 30px 20px;
+        padding: 30px 10px;
+        gap: 1.5rem;
+    }
+}
+
+.foot {
+    padding: 0 100px;
+}
+
+@media only screen and (max-width: 600px) {
+    .foot {
+        padding: 0 10px;
     }
 }
 
@@ -2227,10 +2237,11 @@ Non-essential - Styles
 
 @media only screen and (max-width: 600px) {
     .footer-logo {
-        width: 70px;
-        margin-bottom: 25px;
+        width: 60px;
     }
 }
+
+
 
 
 /*footer links*/
@@ -2244,7 +2255,8 @@ Non-essential - Styles
 @media only screen and (max-width: 600px) {
     .foot-link {
         width: 100%;
-        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 10px;
     }
 }
 
@@ -2266,6 +2278,12 @@ Non-essential - Styles
 .foot-link ul li {
     list-style: none;
     margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    .foot-link ul li {
+        font-size: 15px;
+    }
 }
 
 .foot-link ul li a {
