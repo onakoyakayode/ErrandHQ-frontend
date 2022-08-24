@@ -600,7 +600,10 @@ body {
         text-align: center;
         font-size: 19px;
         line-height: 31px;
+    }
 
+    .support p {
+        width: 100%;
     }
 }
 
@@ -2136,7 +2139,7 @@ Non-essential - Styles
 
     #in-touch-message{
         align-items: center;
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .social-icons {
@@ -2159,14 +2162,14 @@ Non-essential - Styles
     .location p {
         font-size: 16px;
         line-height: 24px;
-        text-align: center;
+        text-align: left;
     }
 }
 
 .get-in-touch-phone {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     margin-bottom: 1.5rem;
 }
 
