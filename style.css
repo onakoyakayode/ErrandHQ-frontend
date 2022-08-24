@@ -29,11 +29,6 @@ body {
 }
 
 
-header {
-
-}
-
-
 .nav {
     height: 100px;
     display: flex;
@@ -183,11 +178,12 @@ header {
 
 /*main-header with image*/
 .main-header {
-    margin: 70px 0 150px 0;
-    padding: 0 20px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    margin: 100px 0 150px 0;
+    padding: 0 200px 0 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 8rem;
 }
 
 
@@ -204,7 +200,7 @@ header {
 /*main-header column 1*/
 .send-errand {
     position: relative;
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -226,7 +222,8 @@ header {
 /*main-header heading*/
 .send-errand h2 {
     font-size: 3rem;
-    padding: 0 30px 0 0;
+    padding: 0;
+    line-height: 4.2rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -239,7 +236,7 @@ header {
 
 /*ErrandHQ text-filled color*/
 .a1 h2 span {
-    background: -webkit-linear-gradient(#84CFBB 6.31%, #8CDEAE 99.03%);
+    background: -webkit-linear-gradient(hsla(202, 64%, 57%, 1), hsla(176, 100%, 41%, 1));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -298,7 +295,7 @@ header {
 /*main-header column 2*/
 .iphone-image {
     position: relative;
-    width: 60%;
+    width: 55%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -346,7 +343,7 @@ header {
 .iphone-right-view {
     position: absolute;
     left: 30px;
-    top: -15px;
+    top: 5px;
     width: 120%;
     height: fit-content;
 }
@@ -396,7 +393,7 @@ header {
 
 /*partner & user text*/
 .partners-users h1 {
-    font-size: 50px;
+    font-size: 40px;
     line-height: 60px;
     color: #212121;
     font-weight: 700;
@@ -432,7 +429,7 @@ header {
 .ellipse3 {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -1%;
     width: 60px;
     height: 60px;
     z-index: -1;
@@ -472,7 +469,7 @@ header {
 .ellipse4 {
     position: absolute;
     top: 0;
-    left: 49%;
+    left: 47%;
     width: 60px;
     height: 60px;
     z-index: -1;
@@ -563,7 +560,7 @@ header {
 
 /*section-one title*/
 .section-one h3 {
-    font-size: 30px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 400;
     line-height: 40px;
@@ -586,10 +583,16 @@ header {
     font-size: 20px;
     font-weight: 400;
     line-height: 31px;
-    color: #9A9A9A;
+    color: #565050;
     position: relative;
-    width: 90%;
+    width: 100%;
 }
+
+.support p {
+    width: 70%;
+}
+
+
 
 @media only screen and (max-width: 600px) {
     .section-one p {
@@ -707,9 +710,9 @@ header {
 .about p {
     font-size: 19px;
     font-weight: 400;
-    line-height: 32px;
-    color: #9A9A9A;
-    opacity: 0.75;
+    line-height: 35px;
+    color: #565050;
+    opacity: 1;
     margin-bottom: 50px;
 }
 
@@ -767,7 +770,7 @@ header {
 .c {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 4rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -838,7 +841,7 @@ header {
 .c p {
     font-size: 20px;
     line-height: 27px;
-    color: #9A9A9A;
+    color: #565050;
 }
 
 @media only screen and (max-width: 600px) {
@@ -931,9 +934,16 @@ header {
 /*How it work paragraph*/
 .d1 p {
     font-size: 20px;
-    line-height: 48px;
-    color: #9A9A9A;
-    opacity: 0.75;
+    line-height: 38px;
+    color: #565050;
+    opacity: 0.85;
+}
+
+.d1 p span {
+    background: -webkit-linear-gradient(hsla(202, 64%, 57%, 1), hsla(176, 100%, 41%, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 24px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -995,10 +1005,18 @@ header {
 .d2 h4 {
     text-align: center;
     color: #fff;
-    font-size: 22px;
+    font-size: 26px;
     font-weight: 700;
-    line-height: 28px;
+    line-height: 34px;
     margin-bottom: 20px;
+}
+
+.d2 h5 {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+    text-shadow: 0px 4px rgba(36, 30, 30, 0.25);
 }
 
 @media only screen and (max-width: 600px) {
@@ -1010,7 +1028,7 @@ header {
 /*Various steps Paragraph*/
 .d2 p {
     color: #fff;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 19.6px;
     text-align: center;
 }
@@ -1069,13 +1087,13 @@ header {
 
 
 /*Contact us details*/
-.contact h6 {
+/* .contact h6 {
     font-size: 22px;
     line-height: 30px;
     font-weight: 400;
     color: #9A9A9A;
     margin-bottom: 10px;
-}
+} */
 
 @media only screen and (max-width: 600px) {
     .contact h6 {
@@ -1087,10 +1105,10 @@ header {
 
 /*Contact us note*/
 .contact p {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 30px;
-    color: #9A9A9A;
-    padding: 0 300px;
+    color: hsla(0, 4%, 33%, 1);
+    padding: 0 250px;
     margin-bottom: 50px;
 }
 
@@ -1297,6 +1315,7 @@ textarea:focus {
 #email,
 #phone-num,
 #subject,
+#locations,
 #errand-details {
     width: 100%;
     margin-bottom: 20px;
@@ -1780,7 +1799,7 @@ Non-essential - Styles
 }
 
 .errands-1 {
-    color: #9A9A9A;
+    color: #565050;
     text-align: center;
     font-weight: 400;
     font-size: 20px;
@@ -1799,11 +1818,11 @@ Non-essential - Styles
     width: 583px;
     height: 86px;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 29px;
     margin: 10px auto 30px auto;
     text-align: center;
-    color: #9A9A9A;
+    color: hsla(0, 4%, 33%, 1);
 }
 
 @media only screen and (max-width: 600px) {
@@ -1866,7 +1885,8 @@ Non-essential - Styles
     border: 1px solid #3D3D3D;
 }
 
-.errand-body-fullName {
+.errand-body-fullName,
+.errand-body-contact {
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -1887,6 +1907,11 @@ Non-essential - Styles
 .errand-body-tel {
     width: 100%;
     margin-bottom: 20px;
+}
+
+.errand-body-location1 {
+    margin-top: -20px;
+    width: 100%;
 }
 
 .errand-body-select {
@@ -2300,5 +2325,5 @@ Non-essential - Styles
 
 
 .z {
-    margin-top: 0px;
+    margin-top: -10px;
 }
